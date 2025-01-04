@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+/* Initial View */
+.initial-view {
+    height: 100vh;
+    display: flex;
+    background-color: #3498db;
+}
+
+.left-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.button {
+    background-color: #afcc2e;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #ae4927;
+}
+
+p.subtitle {
+    color: #ecf0f1;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.right-image {
+    flex: 1;
+    background: url('skibidi-removebg-preview.png') no-repeat center center;
+    background-size: 600 500px; /* Adjust the width and height as needed */
+}
+
+/* Scrolled View */
+.scrolled-view {
+    padding: 50px;
+    background-color: #3498db;
+    color: white;
+}
+
+.scrolled-view p {
+    line-height: 1.6;
+}
+
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Reduced padding to make it smaller */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em; /* Smaller text size */
+}
+/* New styles for chart section */
+.chart-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #3c80e7; /* Match the background of the scrolled view */
+}
+
+.chart-section iframe {
+    max-width: 1000px; /* Ensure it doesn't get too large on wide screens */
+    border-radius: 10px; /* Optional: round corners for aesthetic appeal */
+}
+/* Existing styles remain unchanged */
+
+.left-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the content */
+    padding-left: 0; /* Remove padding since we are centering */
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 30px; /* More space from the button */
+    display: flex;
+    gap: 20px; /* Increase gap between icons */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 32px; /* Larger icons */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #382ecc; /* Green color from the button */
+}
+
+.chart-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically within .chart-section */
+    padding: 20px 0; /* Remove side padding, only add vertical padding */
+    background-color: #070629;
+}
+
+#dexscreener-embed {
+    position: relative;
+    width: 80%; /* Make the chart 80% of the container's width for a smaller size */
+    max-width: 800px; /* Cap the maximum width to ensure it doesn't get too big on large screens */
+    padding-bottom: 50%; /* Adjust this to make the chart smaller; 50% maintains a 2:1 aspect ratio */
+    margin: 0 auto; /* Center the chart within its container */
+}
+
+#dexscreener-embed iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+}
